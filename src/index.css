@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    color: #fff;
+}
+@media screen and (min-width: 601px) {
+    @media screen and (max-width: 800px){
+        html {
+            font-size: 17px;
+          }
+          .wrapper{
+              max-width: 100vh;
+              max-height: 70vh;
+          }
+          #images{
+            max-height: 40vh;
+            max-width: 40vh;
+        }
+          
+}
+  }
+
+  @media screen and (min-width: 601px) {
+    @media screen and (max-width: 1600px){
+        .deleteButton{
+            width: 23vh;
+          }
+     
+    }
+}
+  img{
+    max-width: 83vh;
+    max-height: 33vh;
+    border-radius:50%;
+    justify-content: center;
+}
+@media screen and (max-width: 600px) {
+   html {
+      font-size: 12px;
+    }
+    .wrapper{
+        max-width: 50vh;
+        max-height: 100vh;
+    }
+  }
+
+body {
+    min-height: 100vh;
+    background: rgb(2,0,36);
+   }
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  padding: 1rem 0.5rem;
+}
+
+section {
+    width: 100%;
+    
+    max-width: 70%;
+    min-height: 70%px;
+    display: rela;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    margin-top: 4vh;
+    background-color: rgba(0,0,0,0.4);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+a, a:visited {
+    color: #fff;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+.flexGrow{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+   
+}
+.persistCheck label {
+    margin: 0;
+
+}
+[type="cheackbox"] {
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px 2px 2px;
+    
+}
+li{
+    list-style-type: none;
+    cursor:pointer;
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
+    justify-content: center;
+    text-align: center;
+    
+    overflow:hidden;
+}
+.profileSearch{
+ width: 100% 
+  
+}
+#submitSearchProfile{
+  color:black;
+}
+#envelope{
+  top: 1vh;
+}
+#searchIcon{
+margin-top: 1vh;
+}
+#searchProfile{
+  float: right;
+}
+#searchProfileLabel{
+  float: right;
+ margin-top: 1vh;
+}
+#images{
+    max-width: 103vh;
+    max-height: 73vh;
+    display: flex;
+    justify-content: center;
+}
+
+.comment{background: rgb(2,0,36);
+    
+    padding: 2px;
+    margin: 5px;
+    justify-content: flex-start;
+    border-radius: 10px;
+    
+    border-color: green;
+}
+
+#post{
+    margin-top: 2vh;
+}
+.dontShow{
+  left: -9999px;
+  position: fixed;
+}
+.wrapper
+{
+  /*  width: 130vh;
+    overflow:hidden;
+    padding-bottom: 5vh;
+    display:flex;
+    justify-content: center;
+*/
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
+    justify-content: center;
+    text-align: center;
+    
+    overflow:hidden;
+    padding-bottom: 10vh;
+}
+.imageWrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.postImage{
+    left: 20vh;
+}
+.secondWrapper{
+    margin-left:auto;
+    margin-right:auto;
+    height:auto; 
+    width:auto;
+    justify-content: center;
+    text-align: center;
+
+}
+textarea{
+ 
+    height: 25vh;
+    width: 60vh;
+}
+
+input[type="file"] {
+    display: none;
+}
+.file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    float: left;
+}
+
+.Header{
+    width: 100%;
+
+    
+    min-height: 10vh;
+    top: 0;
+    color: black;
+    width: 145vh;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+}
+.falaptop, .famobile, .fatablet{
+    color:#ccc;
+    float: right;
+    
+}
+#headerTitle{
+
+    display: flex;
+    justify-content: center;
+    font-size: 7vh;
+    color:rgb(208, 182, 214);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    background-color: black;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+}
+
+/*
+button{
+    align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+button:hover{
+
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+button:focus{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+} */
+
+button {
+    align-items: center;
+    background-image: linear-gradient(135deg, #700527 40%, #24bb89);
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: "Codec cold",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 7vh;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  button:active {
+    outline: 0;
+  }
+  
+  button:hover {
+    outline: 0;
+  }
+  
+  button span {
+    transition: all 200ms;
+  }
+  
+  button:hover span {
+    transform: scale(.9);
+    opacity: .75;
+  }
+  
+  @media screen and (max-width: 991px) {
+    button {
+      font-size: 15px;
+      height: 50px;
+    }
+  
+    button span {
+      line-height: 50px;
+    }
+    #images{
+        max-height: 60vh;
+        max-width: 60vh;
+    }
+  }
+
+
+
+#title{
+    width: 60vh;
+}
+.imgAndTextWrapper{
+    
+position: relative;
+padding-bottom: 32px;
+}
+#comment, #title{
+    flex-wrap: nowrap;
+    display: flex;
+}
+#uploadImage{
+    margin-top: 10vh;
+    max-width: 83vh;
+    max-height: 42vh;
+    border-radius:50%;
+    float: right;
+    position: absolute;
+    top: 0;
+    left: 80vh;
+}
+@media screen and (max-width: 768px) {
+    #title, #comment{
+        width: 40vh;
+    }
+    #uploadImage{
+        left: 42vh;
+        max-width: 53vh;
+        max-height: 33vh;
+        border-radius:50%;
+    }
+}
+.wrapper:hover{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+}
+.wrapper:focus{
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+.commentor, .date{
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 2vh;
+    padding-left: 5vh;
+      }
+.editCommentButton, .deleteCommentButton{
+    display: inline-block;
+    margin-left: 1vh;
+    
+}
+.deleteCommentButton:hover{
+    background-color: red;
+    
+}
+
+.deleteButton:hover{
+    background-color: red;
+    
+}
+.deleteButton{
+    position:absolute;
+    top:25vh;
+    right:45vh;
+    margin: 2px;
+}
+.editButton{
+    position: absolute;
+    top: 25vh;
+    right: 70vh;
+    margin: 2px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+@media screen and (max-width: 601px){
+    .deleteButton{
+        position:absolute;
+        top:25vh;
+        right:17vh;
+        margin: 2px;
+    }
+    .editButton{
+        position: absolute;
+        top: 15vh;
+        right: 20vh;
+        margin: 2px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+}
+@media screen and (min-width: 601px){ 
+    @media screen and (max-width: 951px){
+        .editButton{
+            right: 35vh;
+            top: 20vh;
+        }
+        .deleteButton{
+            right: 30vh;
+            top: 32vh;
+        }
+    }
+}
+
+
+.date{
+    font-size: 3vh;
+}
+.Nav{
+    position:fixed;
+    z-index:1;
+    left:0;
+    width: 15.7%;
+    top:0vh;
+    
+}
+  
+  .Nav li {
+    padding: 1rem; 
+    background-image: linear-gradient(135deg, #700527 70%, #24bb89);
+    height: 13.7vh;
+}
+  
+  .Nav li:hover, 
+  .Nav li:focus {
+    padding: 1rem;
+  }
+  
+  .Nav li a {
+    
+    text-decoration: none;
+  }
+  
+  .Nav li:hover, 
+  .Nav li:focus
+  {
+    background-image: linear-gradient(135deg, #700527 30%, #24bb89);
+  }
+  
+  .Nav li:hover a, 
+  .Nav li:focus a {
+    cursor: pointer;
+  }
+  #profileByCom:hover{
+    cursor: pointer;
+   
+    color:black;
+  }
+  .postBy:hover{
+    cursor: pointer;
+    color:#24bb89
+  } 
+  .profilePic{
+    max-width: 23vh;
+    max-height: 23vh;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 42%;
+  }
+  .commProfile{
+    max-width: 10vh;
+    max-height: 10vh;
+  }
+  .commProfile:hover{
+    cursor: pointer;
+  }
+  .profileName{
+    display: flex;
+    justify-content: center;
+    font-size: 8vh;
+  }
+    #profileCommentor{
+        display: flex;
+        margin-left: 4vh;    
+  }
+  #chart{
+    display:flex;
+    justify-content: left;
+
+  }
+  a:link{
+    text-decoration: none;
+  }
+  .postTitle:hover{
+    color:#553c9a
+  }
